@@ -1,0 +1,132 @@
+/* =================================
+   Slider Section
+   ================================= */
+
+/* Kontainer slider */
+.slider {
+  position: relative;
+  margin: 20px auto;
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2d6a8c, #1e4e6a);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gambar di dalam slider */
+.slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5); /* Gelapkan gambar */
+}
+
+/* Overlay di atas gambar slider */
+.slider .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Teks dan tombol vertikal */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Judul teks pada slider */
+.slider .overlay h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Tombol masuk dan daftar */
+.slider .btn {
+  padding: 6px 20px; /* Ukuran tombol lebih kecil */
+  background: rgba(255, 255, 255, 0.9);
+  color: #2d6a8c;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 1px solid #2d6a8c;
+  border-radius: 10px; /* Bentuk ramping */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: auto;
+  max-width: 120px; /* Lebar tombol terbatas */
+}
+
+/* Hover effect tombol */
+.slider .btn:hover {
+  background: #2d6a8c;
+  color: #fff;
+  transform: scale(1.1); /* Efek zoom */
+}
+
+/* Container tombol (Masuk dan Daftar) */
+.slider .overlay .btn-container {
+  display: flex;
+  gap: 10px; /* Jarak antar tombol */
+  flex-direction: row; /* Tombol sejajar horizontal */
+}
+
+/* =================================
+   Grafik Section
+   ================================= */
+
+/* Section Grafik */
+.section.grafik {
+  max-width: 600px;  /* Lebar maksimal grafik lebih kecil */
+  margin: 30px auto 20px auto; /* Mengurangi margin bawah untuk memperkecil jarak antara grafik dan diagram */
+  padding: 20px;
+}
+
+/* Judul grafik */
+.section.grafik h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Ukuran grafik (Line chart) */
+.chart-container {
+  max-width: 100%; /* Pastikan grafik tidak melebihi kontainer */
+  height: 500px;  /* Atur tinggi grafik */
+  margin: 0 auto;
+}
+
+/* =================================
+   Diagram Section
+   ================================= */
+
+/* Section Diagram */
+.section.diagram {
+  max-width: 700px; /* Lebar maksimal diagram lebih kecil */
+  margin: 20px auto; /* Mengurangi margin atas untuk memperkecil jarak antara grafik dan diagram */
+  padding: 20px;
+  display: flex; /* Menggunakan flexbox untuk penataan */
+  flex-direction: column; /* Menata elemen secara vertikal (tulisan di atas, diagram di bawah) */
+  justify-content: center; /* Menjaga agar diagram berada di tengah secara vertikal */
+  align-items: center; /* Menjaga agar diagram berada di tengah secara horizontal */
+}
+
+/* Judul diagram */
+.section.diagram h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px; /* Jarak antara judul dan diagram */
+  text-align: center;
+}
+
+/* Ukuran diagram (Pie chart) */
+.diagram-container {
+  max-width: 100%; /* Pastikan diagram tidak melebihi kontainer */
+  height: 300px;  /* Atur tinggi diagram */
+  margin: 0 auto; /* Menjaga margin agar tetap rata kiri-kanan */
+}

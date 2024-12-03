@@ -1,0 +1,61 @@
+.jadwal-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .jadwal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .jadwal-table th,
+  .jadwal-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .jadwal-table th {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .jadwal-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
